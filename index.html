@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            width:100vw;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .solar{
+            width:500px;
+            height:500px;
+            border-radius: 50%;
+            background-color: blue;
+            position: relative;
+            border:2px solid #fff;
+        }
+        .earth-img{
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            background:url('https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/77964/earth-clipart-md.png');
+            background-repeat:no-repeat;
+            background-size:400% 400%;
+            background-origin:padding-box;
+            background-color: black;
+            border-radius:50%;
+            animation: solar_animation 8s linear infinite;
+
+        }
+        @keyframes solar_animation {
+            from{
+                background-position:0;
+            }
+            to{
+                background-position:100%;
+                /* transform: rotateX(360deg); */
+                /* background-position:center; */
+            }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="solar">
+       <div class="earth-img">
+
+       <!-- <img src="https://cdn3d.iconscout.com/3d/premium/thumb/planet-earth-5353031-4471306.png"
+        alt="earth" width="300"> -->
+
+       </div>
+    </div>
+</body>
+</html>
